@@ -1,0 +1,47 @@
+{
+  "name": "@yeliulee/vue-mdi-svg",
+  "version": "1.0.0",
+  "description": "Material Design Svg Icons for Vue.js",
+  "main": "main.js",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "types/*"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeliulee/vue-mdi-svg.git"
+  },
+  "keywords": [
+    "material design icons",
+    "vue 3",
+    "vue 2",
+    "vue svg icons",
+    "mdi svg",
+    "icons",
+    "icon",
+    "vuejs",
+    "vue.js",
+    "material-design",
+    "svg icons"
+  ],
+  "author": "Sherman Chu <yeliuleet@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeliulee/vue-mdi-svg/issues"
+  },
+  "homepage": "https://github.com/yeliulee/vue-mdi-svg#readme",
+  "devDependencies": {
+    "prettier": "^2.4.1",
+    "vue": "*"
+  },
+  "peerDependencies": {
+    "@mdi/js": "*",
+    "vue": "*"
+  }
+}

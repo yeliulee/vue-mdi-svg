@@ -1,0 +1,10 @@
+.*.swp
+._*
+.DS_Store
+.git
+.npmrc
+npm-debug.log
+.npmignore
+.prettierrc
+.vscode
+.idea

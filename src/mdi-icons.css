@@ -1,0 +1,37 @@
+.mdi > svg {
+  vertical-align: middle;
+}
+
+.mdi.mdi-spin > svg {
+  -webkit-animation: mdi-spin 2s infinite linear;
+  -moz-animation: mdi-spin 2s infinite linear;
+  animation: mdi-spin 2s infinite linear;
+}
+
+@keyframes mdi-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes mdi-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
