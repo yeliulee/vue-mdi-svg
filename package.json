@@ -1,6 +1,6 @@
 {
   "name": "@yeliulee/vue-mdi-svg",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Material Design Svg Icons for Vue.js",
   "main": "main.js",
   "typesVersions": {
