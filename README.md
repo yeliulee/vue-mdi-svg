@@ -23,9 +23,11 @@ For better **Tree Shaking Optimization**, you have to import icons by your self
 
 If you want to import all icons to your apps, please refer to **[mdi-vue][0]**
 
+(Recommended to build your Vue.js App with **[Vite][3]**)
+
 **For Vue 2**
 
-```javascript
+```html
 // main.[js|ts] According to your project
 import Vue from 'vue';
 import MdiSvg from "@yeliulee/vue-mdi-svg/v2"
@@ -53,7 +55,7 @@ export default {
 
 **For Vue 3**
 
-```javascript
+```html
 // main.[js|ts] According to your project
 import { createApp } from 'vue'
 import MdiSvg from "@yeliulee/vue-mdi-svg/v3" // or just "@yeliulee/vue-mdi-svg"
@@ -109,7 +111,7 @@ The description of svg.
 
 The width and height of the icon, it will work if no `width` or `height` is provided
 
-```
+```html
 <MdiSvg :size="48"> {{ your icon }} </MdiSvg>
 
 <MdiSvg :width="16" :height="16"> {{ your icon }} </MdiSvg>
@@ -144,3 +146,4 @@ This libray is based on [mdi-vue][0], thanks to [@therufa][1] and all [mdi-vue][
 [0]: https://github.com/therufa/mdi-vue
 [1]: https://github.com/therufa
 [2]: README.zh-CN.md
+[3]: https://vitejs.dev/

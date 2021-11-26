@@ -2,7 +2,7 @@
 
 本插件用于在 Vue 中展示 Material Design Svg 图标
 
-不过别在意名称，实际上可以用于任意得单色 svg 图标 (如 Font Awesome Svg)
+不过别在意名称，实际上可以用于任意的单色 svg 图标 (如 Font Awesome Svg)
 
 :book: [Doc for English][2]
 
@@ -27,7 +27,7 @@ npm install @mdi/js @yeliulee/vue-mdi-svg
 
 **For Vue 2**
 
-```javascript
+```html
 // main.[js|ts] 根据你的实际项目
 import Vue from 'vue';
 import MdiSvg from "@yeliulee/vue-mdi-svg/v2"
@@ -55,7 +55,7 @@ export default {
 
 **For Vue 3**
 
-```javascript
+```html
 // main.[js|ts] 根据你的实际项目
 import { createApp } from 'vue'
 import MdiSvg from "@yeliulee/vue-mdi-svg/v3" // 或直接 "@yeliulee/vue-mdi-svg"
@@ -110,7 +110,7 @@ svg 图标的描述性字符串
 
 图标的宽度和高度，以便于在未设置 `width` 或 `height` 属性时提供宽高
 
-```
+```html
 <MdiSvg :size="48"> {{ your icon }} </MdiSvg>
 
 <MdiSvg :width="16" :height="16"> {{ your icon }} </MdiSvg>
