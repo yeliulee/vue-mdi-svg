@@ -129,6 +129,10 @@ The height of the icon
 
 The viewbox of the svg icon
 
+```html
+<MdiSvg :viewBox="'0 0 24 24'"> {{ your icon }} </MdiSvg>
+```
+
 **spin**
 
 Apply a spin/rotate animation to the icon
