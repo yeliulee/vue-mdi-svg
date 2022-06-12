@@ -1,8 +1,6 @@
-# Material Design Svg Icons for Vue.js 
+# Material Design Svg Icons for Vue.js
 
 本插件用于在 Vue 中展示 Material Design Svg 图标
-
-不过别在意名称，实际上可以用于任意的单色 svg 图标 (如 Font Awesome Svg)
 
 :book: [Doc for English][2]
 
@@ -10,12 +8,11 @@
 
 以下使用 `@mdi/js` 作为示例
 
-```
+```shell
 yarn add @mdi/js @yeliulee/vue-mdi-svg
 # OR
 npm install @mdi/js @yeliulee/vue-mdi-svg
 ```
-
 
 ## 示例
 
@@ -25,11 +22,12 @@ npm install @mdi/js @yeliulee/vue-mdi-svg
 
 (建议使用 Vite 构建你的 Vue.js App)
 
-**For Vue 2**
+### For Vue 2
 
 ```html
 // main.[js|ts] 根据你的实际项目
 import Vue from 'vue';
+import "@yeliulee/vue-mdi-svg/src/styles.css" // 组件的样式
 import MdiSvg from "@yeliulee/vue-mdi-svg/v2"
 import App from './App.vue'; // 根据你的实际项目
 
@@ -53,11 +51,12 @@ export default {
 </script>
 ```
 
-**For Vue 3**
+### For Vue 3
 
 ```html
 // main.[js|ts] 根据你的实际项目
 import { createApp } from 'vue'
+import "@yeliulee/vue-mdi-svg/src/styles.css" // 组件的样式
 import MdiSvg from "@yeliulee/vue-mdi-svg/v3" // 或直接 "@yeliulee/vue-mdi-svg"
 import App from './App.vue' // 根据你的实际项目
 
@@ -78,15 +77,13 @@ import { mdiWechat } from '@mdi/js'
 </script>
 ```
 
-
 ## Nuxt.js 2 / 3
 
 Nuxt.js 2 / 3 均支持安装 Vue 插件，请自行阅读相对应的文档
 
-
 ## 属性
 
-**path(optional)**
+### path(optional)
 
 svg 图标的 `path` 子元素的 `d` 属性
 
@@ -102,11 +99,11 @@ import { mdiReact } from '@mdi/js'
 </script>
 ```
 
-**title**
+### title
 
 svg 图标的描述性字符串
 
-**size(numeric or string; default: 24)**
+### size(numeric or string; default: 24)
 
 图标的宽度和高度，以便于在未设置 `width` 或 `height` 属性时提供宽高
 
@@ -116,19 +113,19 @@ svg 图标的描述性字符串
 <MdiSvg :width="16" :height="16"> {{ your icon }} </MdiSvg>
 ```
 
-**width**
+### width
 
 图标的宽度
 
-**height**
+### height
 
 图标的高度
 
-**viewBox**
+### viewBox
 
 图标的 viewBox
 
-**spin**
+### spin
 
 给图标添加一个旋转动画
 
@@ -140,7 +137,6 @@ svg 图标的描述性字符串
 ## 开源授权
 
 本项目基于 [mdi-vue][0], 感谢 [@therufa][1] 以及 [mdi-vue][0] 的所有贡献者
-
 
 [0]: https://github.com/therufa/mdi-vue
 [1]: https://github.com/therufa

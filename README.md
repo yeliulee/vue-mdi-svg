@@ -1,8 +1,6 @@
-# Material Design Svg Icons for Vue.js 
+# Material Design Svg Icons for Vue.js
 
 Library to render Material Design Svg Icons in Vue.js
-
-Never mind the project name, you can actually use any monochrome svg icon(like Font Awesome Svg).
 
 :book: [Doc for Simplified Chinese][2]
 
@@ -10,12 +8,11 @@ Never mind the project name, you can actually use any monochrome svg icon(like F
 
 Here we use `@mdi/js` as an example
 
-```
+```shell
 yarn add @mdi/js @yeliulee/vue-mdi-svg
 # OR
 npm install @mdi/js @yeliulee/vue-mdi-svg
 ```
-
 
 ## Example
 
@@ -25,11 +22,12 @@ If you want to import all icons to your apps, please refer to **[mdi-vue][0]**
 
 (Recommended to build your Vue.js App with **[Vite][3]**)
 
-**For Vue 2**
+### For Vue 2
 
 ```html
 // main.[js|ts] According to your project
 import Vue from 'vue';
+import "@yeliulee/vue-mdi-svg/src/styles.css" // styles of  icon component
 import MdiSvg from "@yeliulee/vue-mdi-svg/v2"
 import App from './App.vue';
 
@@ -53,11 +51,12 @@ export default {
 </script>
 ```
 
-**For Vue 3**
+### For Vue 3
 
 ```html
 // main.[js|ts] According to your project
 import { createApp } from 'vue'
+import "@yeliulee/vue-mdi-svg/src/styles.css"
 import MdiSvg from "@yeliulee/vue-mdi-svg/v3" // or just "@yeliulee/vue-mdi-svg"
 import App from './App.vue' // According to your code
 
@@ -78,16 +77,13 @@ import { mdiWechat } from '@mdi/js'
 </script>
 ```
 
-
-## Nuxt.js 2 / 3
+### Nuxt.js 2 / 3
 
 both Nuxt.js 2 / 3 support Vue plugins, please read the corresponding documentation
 
-
-
 ## Props
 
-**path(optional)**
+### path(optional)
 
 The path of Svg, it won't work if slot is used
 
@@ -103,11 +99,11 @@ import { mdiReact } from '@mdi/js'
 </script>
 ```
 
-**title**
+### title
 
 The description of svg.
 
-**size(numeric or string; default: 24)**
+### size(numeric or string; default: 24)
 
 The width and height of the icon, it will work if no `width` or `height` is provided
 
@@ -117,15 +113,15 @@ The width and height of the icon, it will work if no `width` or `height` is prov
 <MdiSvg :width="16" :height="16"> {{ your icon }} </MdiSvg>
 ```
 
-**width**
+### width
 
 The width of the icon
 
-**height**
+### height
 
 The height of the icon
 
-**viewBox**
+### viewBox
 
 The viewbox of the svg icon
 
@@ -133,7 +129,7 @@ The viewbox of the svg icon
 <MdiSvg :viewBox="'0 0 24 24'"> {{ your icon }} </MdiSvg>
 ```
 
-**spin**
+### spin
 
 Apply a spin/rotate animation to the icon
 
@@ -145,7 +141,6 @@ Apply a spin/rotate animation to the icon
 ## Credits
 
 This libray is based on [mdi-vue][0], thanks to [@therufa][1] and all [mdi-vue][0]'s contributors
-
 
 [0]: https://github.com/therufa/mdi-vue
 [1]: https://github.com/therufa
