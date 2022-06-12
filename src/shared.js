@@ -1,4 +1,3 @@
-import './mdi-icons.css'
 import { props } from './props'
 
 const getChildrenTextContent = function (children) {
